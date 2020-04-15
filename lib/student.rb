@@ -35,7 +35,7 @@ class Student
   end
   
   def self.create(hash)
-    student = Student.new()
+    student = Student.new(self)
     student.save
     student
   end
