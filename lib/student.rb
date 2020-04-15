@@ -12,8 +12,9 @@ class Student
     
     sql = <<-SQL
       CREATE TABLE students (
-        id INTEGER 
-        
+        id INTEGER PRIMARY KEY,
+        name TEXT,
+        grade TEXT
         )
         SQL
   end
