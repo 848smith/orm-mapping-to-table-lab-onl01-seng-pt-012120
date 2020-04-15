@@ -35,7 +35,7 @@ class Student
   end
   
   def self.create(hash)
-    student = Student.new(DB)
+    student = Student.new(DB[:conn])
     student.save
     student
   end
